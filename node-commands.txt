@@ -1,0 +1,3 @@
+Express commands:
+
+morgan library = log the developer work on the server side :(app.use(morgan('dev')))

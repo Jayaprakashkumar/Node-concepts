@@ -1,0 +1,11 @@
+1. git init
+2. git status
+3. git log --oneline
+4. git commit -m "message"
+5. git push
+6. git checkout THENUMBER FILENAME
+		get the num and filename from --git log command
+7. git reset HEAD fileName
+              unstage the recently updated file
+8. git checkout --filename
+              revert the recently updated file
