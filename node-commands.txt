@@ -1,3 +1,6 @@
 Express commands:
 
 morgan library = log the developer work on the server side :(app.use(morgan('dev')))
+body-parser = parse the request body json
+express-generator = globally install it, it generate the skeleton for the express module 
+express SERVERNAME = create a express server like (ng new APP in angular)
