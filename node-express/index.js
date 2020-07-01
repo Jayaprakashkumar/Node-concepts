@@ -45,24 +45,24 @@ app.delete("/dishes", (req, res, next) => {
     res.end("Delete all the dishes!!");
 });
 
-app.get("/dishes/dishId", (req, res, next) => {
+app.get("/dishes/:dishId", (req, res, next) => {
     // res.end(`Send the details of dish id ${req.params.dishId} `);
     res.end("Send the details of dish of Id " + req.params.dishId);
 });
 
-app.post("/dishes/dishId", (req, res, next) => {
+app.post("/dishes/:dishId", (req, res, next) => {
     res.statusCode = 403;
     res.end("Post will not work for unique Id " + req.params.dishId);
 });
 
-app.put("/dishes/dishId", (req, res, next) => {
+app.put("/dishes/:dishId", (req, res, next) => {
     res.write("Update the dish for particular id " + req.params.dishId + "\n");
     res.end(
         `Update the dish values with name ${req.body.name} and details ${req.body.description}`
     );
 });
 
-app.delete("/dishes/dishId", (req, res, next) => {
+app.delete("/dishes/:dishId", (req, res, next) => {
     res.end(`Delete the dishes for ${req.params.dishId}!!`);
 });
 
