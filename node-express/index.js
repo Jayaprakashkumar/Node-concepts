@@ -6,7 +6,6 @@ const bodyParser = require("body-parser");
 const dishRouter = require("./router/dishRouter");
 const promoRouter = require("./router/promoRouter");
 const leaderRouter = require("./router/leaderRouter");
-const { Router } = require("express");
 
 const app = express();
 const port = 3000;

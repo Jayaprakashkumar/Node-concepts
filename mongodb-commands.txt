@@ -1,0 +1,14 @@
+set the mongo db bin path to the environment variables, to access the mongo globally;
+
+mongod --dbpath=data --bind_ip 127.0.0.1 = mongodb server setup,whereas data is the path where mongodb store the its collections.
+mongo = start the mongo repel;
+use DATABASE_NAME = create new database.
+db = to know the current databse working on.
+db.help() = to see all commands in mongodb
+db.COLLECTION_NAME.insert(JSON) = insert a document.
+db.COLLECTION_NAME.find().pretty()= display the document in that collection with readable manner;
+exit = exist from the mongo repel;
+
+show dbs =  list out the dbs;
+db.dropDatabase() = drop the database;
+db.COLLECTION_NAME.drop() = drop the collection from that database. (first go inside the datbase and drop the collections)
